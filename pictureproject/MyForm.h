@@ -74,6 +74,19 @@ namespace pictureproject {
 	private: System::Windows::Forms::TabPage^  project5;
 	private: System::Windows::Forms::PictureBox^  pictureBox13;
 	private: System::Windows::Forms::PictureBox^  pictureBox12;
+	private: System::Windows::Forms::Button^  button11;
+	private: System::Windows::Forms::Button^  button12;
+	private: System::Windows::Forms::Button^  button13;
+	private: System::Windows::Forms::Button^  button14;
+	private: System::Windows::Forms::TabPage^  tabPage1;
+	private: System::Windows::Forms::Button^  button15;
+	private: System::Windows::Forms::PictureBox^  pictureBox15;
+	private: System::Windows::Forms::PictureBox^  pictureBox14;
+	private: System::Windows::Forms::Button^  button17;
+	private: System::Windows::Forms::Button^  button16;
+	private: System::Windows::Forms::Button^  button20;
+	private: System::Windows::Forms::Button^  button19;
+	private: System::Windows::Forms::Button^  button18;
 
 
 
@@ -134,8 +147,21 @@ namespace pictureproject {
 			this->pictureBox11 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox10 = (gcnew System::Windows::Forms::PictureBox());
 			this->project5 = (gcnew System::Windows::Forms::TabPage());
-			this->pictureBox12 = (gcnew System::Windows::Forms::PictureBox());
+			this->button14 = (gcnew System::Windows::Forms::Button());
+			this->button13 = (gcnew System::Windows::Forms::Button());
+			this->button12 = (gcnew System::Windows::Forms::Button());
+			this->button11 = (gcnew System::Windows::Forms::Button());
 			this->pictureBox13 = (gcnew System::Windows::Forms::PictureBox());
+			this->pictureBox12 = (gcnew System::Windows::Forms::PictureBox());
+			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
+			this->button20 = (gcnew System::Windows::Forms::Button());
+			this->button19 = (gcnew System::Windows::Forms::Button());
+			this->button18 = (gcnew System::Windows::Forms::Button());
+			this->button17 = (gcnew System::Windows::Forms::Button());
+			this->button16 = (gcnew System::Windows::Forms::Button());
+			this->button15 = (gcnew System::Windows::Forms::Button());
+			this->pictureBox15 = (gcnew System::Windows::Forms::PictureBox());
+			this->pictureBox14 = (gcnew System::Windows::Forms::PictureBox());
 			this->projectbox->SuspendLayout();
 			this->project1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->BeginInit();
@@ -157,8 +183,11 @@ namespace pictureproject {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox11))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox10))->BeginInit();
 			this->project5->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox12))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox13))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox12))->BeginInit();
+			this->tabPage1->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox15))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox14))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// projectbox
@@ -168,6 +197,7 @@ namespace pictureproject {
 			this->projectbox->Controls->Add(this->project3);
 			this->projectbox->Controls->Add(this->project4);
 			this->projectbox->Controls->Add(this->project5);
+			this->projectbox->Controls->Add(this->tabPage1);
 			this->projectbox->Cursor = System::Windows::Forms::Cursors::Default;
 			this->projectbox->Font = (gcnew System::Drawing::Font(L"細明體-ExtB", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(136)));
@@ -506,6 +536,10 @@ namespace pictureproject {
 			// 
 			// project5
 			// 
+			this->project5->Controls->Add(this->button14);
+			this->project5->Controls->Add(this->button13);
+			this->project5->Controls->Add(this->button12);
+			this->project5->Controls->Add(this->button11);
 			this->project5->Controls->Add(this->pictureBox13);
 			this->project5->Controls->Add(this->pictureBox12);
 			this->project5->Location = System::Drawing::Point(4, 23);
@@ -515,21 +549,155 @@ namespace pictureproject {
 			this->project5->Text = L"project5";
 			this->project5->UseVisualStyleBackColor = true;
 			// 
+			// button14
+			// 
+			this->button14->Location = System::Drawing::Point(686, 373);
+			this->button14->Name = L"button14";
+			this->button14->Size = System::Drawing::Size(75, 23);
+			this->button14->TabIndex = 5;
+			this->button14->Text = L"Alpha";
+			this->button14->UseVisualStyleBackColor = true;
+			this->button14->Click += gcnew System::EventHandler(this, &MyForm::button14_Click);
+			// 
+			// button13
+			// 
+			this->button13->Location = System::Drawing::Point(686, 323);
+			this->button13->Name = L"button13";
+			this->button13->Size = System::Drawing::Size(75, 23);
+			this->button13->TabIndex = 4;
+			this->button13->Text = L"medpoint";
+			this->button13->UseVisualStyleBackColor = true;
+			this->button13->Click += gcnew System::EventHandler(this, &MyForm::button13_Click);
+			// 
+			// button12
+			// 
+			this->button12->Location = System::Drawing::Point(686, 265);
+			this->button12->Name = L"button12";
+			this->button12->Size = System::Drawing::Size(75, 23);
+			this->button12->TabIndex = 3;
+			this->button12->Text = L"median";
+			this->button12->UseVisualStyleBackColor = true;
+			this->button12->Click += gcnew System::EventHandler(this, &MyForm::button12_Click);
+			// 
+			// button11
+			// 
+			this->button11->Location = System::Drawing::Point(686, 217);
+			this->button11->Name = L"button11";
+			this->button11->Size = System::Drawing::Size(75, 23);
+			this->button11->TabIndex = 2;
+			this->button11->Text = L"lowpass";
+			this->button11->UseVisualStyleBackColor = true;
+			this->button11->Click += gcnew System::EventHandler(this, &MyForm::button11_Click);
+			// 
+			// pictureBox13
+			// 
+			this->pictureBox13->Location = System::Drawing::Point(876, 3);
+			this->pictureBox13->Name = L"pictureBox13";
+			this->pictureBox13->Size = System::Drawing::Size(589, 483);
+			this->pictureBox13->TabIndex = 1;
+			this->pictureBox13->TabStop = false;
+			// 
 			// pictureBox12
 			// 
 			this->pictureBox12->Location = System::Drawing::Point(3, 3);
 			this->pictureBox12->Name = L"pictureBox12";
-			this->pictureBox12->Size = System::Drawing::Size(491, 416);
+			this->pictureBox12->Size = System::Drawing::Size(589, 483);
 			this->pictureBox12->TabIndex = 0;
 			this->pictureBox12->TabStop = false;
 			// 
-			// pictureBox13
+			// tabPage1
 			// 
-			this->pictureBox13->Location = System::Drawing::Point(903, 3);
-			this->pictureBox13->Name = L"pictureBox13";
-			this->pictureBox13->Size = System::Drawing::Size(442, 416);
-			this->pictureBox13->TabIndex = 1;
-			this->pictureBox13->TabStop = false;
+			this->tabPage1->Controls->Add(this->button20);
+			this->tabPage1->Controls->Add(this->button19);
+			this->tabPage1->Controls->Add(this->button18);
+			this->tabPage1->Controls->Add(this->button17);
+			this->tabPage1->Controls->Add(this->button16);
+			this->tabPage1->Controls->Add(this->button15);
+			this->tabPage1->Controls->Add(this->pictureBox15);
+			this->tabPage1->Controls->Add(this->pictureBox14);
+			this->tabPage1->Location = System::Drawing::Point(4, 23);
+			this->tabPage1->Name = L"tabPage1";
+			this->tabPage1->Size = System::Drawing::Size(1567, 723);
+			this->tabPage1->TabIndex = 5;
+			this->tabPage1->Text = L"project6";
+			this->tabPage1->UseVisualStyleBackColor = true;
+			// 
+			// button20
+			// 
+			this->button20->Location = System::Drawing::Point(625, 279);
+			this->button20->Name = L"button20";
+			this->button20->Size = System::Drawing::Size(180, 23);
+			this->button20->TabIndex = 7;
+			this->button20->Text = L"spatial high-boost A=3";
+			this->button20->UseVisualStyleBackColor = true;
+			this->button20->Click += gcnew System::EventHandler(this, &MyForm::button20_Click);
+			// 
+			// button19
+			// 
+			this->button19->Location = System::Drawing::Point(625, 250);
+			this->button19->Name = L"button19";
+			this->button19->Size = System::Drawing::Size(180, 23);
+			this->button19->TabIndex = 6;
+			this->button19->Text = L"spatial high-boost A=2";
+			this->button19->UseVisualStyleBackColor = true;
+			this->button19->Click += gcnew System::EventHandler(this, &MyForm::button19_Click);
+			// 
+			// button18
+			// 
+			this->button18->Location = System::Drawing::Point(625, 221);
+			this->button18->Name = L"button18";
+			this->button18->Size = System::Drawing::Size(180, 23);
+			this->button18->TabIndex = 5;
+			this->button18->Text = L"spatial high-boost A=1";
+			this->button18->UseVisualStyleBackColor = true;
+			this->button18->Click += gcnew System::EventHandler(this, &MyForm::button18_Click);
+			// 
+			// button17
+			// 
+			this->button17->Location = System::Drawing::Point(625, 156);
+			this->button17->Name = L"button17";
+			this->button17->Size = System::Drawing::Size(180, 23);
+			this->button17->TabIndex = 4;
+			this->button17->Text = L"spatial hegh-pass 7*7";
+			this->button17->UseVisualStyleBackColor = true;
+			this->button17->Click += gcnew System::EventHandler(this, &MyForm::button17_Click);
+			// 
+			// button16
+			// 
+			this->button16->Location = System::Drawing::Point(625, 127);
+			this->button16->Name = L"button16";
+			this->button16->Size = System::Drawing::Size(180, 23);
+			this->button16->TabIndex = 3;
+			this->button16->Text = L"spatial high-pass 5*5";
+			this->button16->UseVisualStyleBackColor = true;
+			this->button16->Click += gcnew System::EventHandler(this, &MyForm::button16_Click);
+			// 
+			// button15
+			// 
+			this->button15->Location = System::Drawing::Point(625, 98);
+			this->button15->Name = L"button15";
+			this->button15->Size = System::Drawing::Size(180, 23);
+			this->button15->TabIndex = 2;
+			this->button15->Text = L"spatial high-pass 3*3";
+			this->button15->UseVisualStyleBackColor = true;
+			this->button15->Click += gcnew System::EventHandler(this, &MyForm::button15_Click);
+			// 
+			// pictureBox15
+			// 
+			this->pictureBox15->Location = System::Drawing::Point(904, 3);
+			this->pictureBox15->Name = L"pictureBox15";
+			this->pictureBox15->Size = System::Drawing::Size(537, 448);
+			this->pictureBox15->TabIndex = 1;
+			this->pictureBox15->TabStop = false;
+			// 
+			// pictureBox14
+			// 
+			this->pictureBox14->Location = System::Drawing::Point(3, 3);
+			this->pictureBox14->Name = L"pictureBox14";
+			this->pictureBox14->Size = System::Drawing::Size(537, 448);
+			this->pictureBox14->TabIndex = 0;
+			this->pictureBox14->TabStop = false;
+			this->pictureBox14->Click += gcnew System::EventHandler(this, &MyForm::pictureBox14_Click);
 			// 
 			// MyForm
 			// 
@@ -562,8 +730,11 @@ namespace pictureproject {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox11))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox10))->EndInit();
 			this->project5->ResumeLayout(false);
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox12))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox13))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox12))->EndInit();
+			this->tabPage1->ResumeLayout(false);
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox15))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox14))->EndInit();
 			this->ResumeLayout(false);
 
 		}
@@ -1046,9 +1217,10 @@ private: System::Void MyForm_Resize(System::Object^  sender, System::EventArgs^ 
 	projectbox->Width = this->Width;
 	projectbox->Height = this->Height - 40;
 }
-#pragma project3
+#pragma project4
 	private: System::Void button10_Click(System::Object^  sender, System::EventArgs^  e) {
-		pictureBox11->Image = Gaussian_noise(ColorToGray(safe_cast<Bitmap^>(Image::FromFile(picture4filepath))), 50);
+		pictureBox11->Image = Gaussian_noise(ColorToGray(safe_cast<Bitmap^>(Image::FromFile(picture4filepath))), 20);
+		pictureBox12->Image = pictureBox11->Image;
 	}
 	private: System::Drawing::Bitmap^ Gaussian_noise(Bitmap^ bmpSrc, float rang) {
 		int pixp[256] = { 0 }, pixn[256] = { 0 };
@@ -1104,7 +1276,8 @@ private: System::Void MyForm_Resize(System::Object^  sender, System::EventArgs^ 
 		return image;
 	}
 	private: System::Void button8_Click(System::Object^  sender, System::EventArgs^  e) {
-		pictureBox11->Image=ImpulseNoise(ColorToGray(safe_cast<Bitmap^>(Image::FromFile(picture4filepath))), 0.05, 0.05);
+		pictureBox11->Image=ImpulseNoise(ColorToGray(safe_cast<Bitmap^>(Image::FromFile(picture4filepath))), 0.1, 0.1);
+		pictureBox12->Image = pictureBox11->Image;
 	}
 	private: System::Void pictureBox10_Click(System::Object^  sender, System::EventArgs^  e) {
 		OpenFileDialog^ openFileDialog = gcnew OpenFileDialog;
@@ -1194,6 +1367,7 @@ private: System::Void MyForm_Resize(System::Object^  sender, System::EventArgs^ 
 	}
 	private: System::Void button9_Click(System::Object^  sender, System::EventArgs^  e) {
 		pictureBox11->Image = Uniform_noise(ColorToGray(safe_cast<Bitmap^>(Image::FromFile(picture4filepath))), 500);
+		pictureBox12->Image = pictureBox11->Image;
 	}
 	private: System::Drawing::Bitmap^ Uniform_noise(Bitmap^ bmpSrc, int a) {
 		chart4->ChartAreas["pix"]->AxisX->Maximum = 255;
@@ -1236,6 +1410,699 @@ private: System::Void MyForm_Resize(System::Object^  sender, System::EventArgs^ 
 		return image;
 	}
 #pragma endregion
+
+
+
+
+#pragma project5
+	private: System::Void button11_Click(System::Object^  sender, System::EventArgs^  e) {
+		pictureBox13->Image = lowpass(ColorToGray(safe_cast<Bitmap^>(pictureBox12->Image)), 3);
+	}
+	private: System::Drawing::Bitmap^ lowpass(Bitmap^ bmpSrc, int spatial) {
+		Bitmap^ image = ConvertBmpTo24Bit(gcnew Bitmap(bmpSrc));
+		Bitmap^ image2 = ConvertBmpTo24Bit(gcnew Bitmap(bmpSrc));
+		Rectangle rect = Rectangle(0, 0, image->Width, image->Height);
+		Rectangle rect2 = Rectangle(0, 0, image2->Width, image2->Height);
+		Imaging::BitmapData^ imagedata = image->LockBits(rect, System::Drawing::Imaging::ImageLockMode::ReadWrite, image->PixelFormat);
+		Imaging::BitmapData^ imagedata2 = image2->LockBits(rect2, System::Drawing::Imaging::ImageLockMode::ReadWrite, image2->PixelFormat);		
+		IntPtr ptr = imagedata->Scan0;
+		IntPtr ptr2 = imagedata2->Scan0;
+		Byte* p = (Byte *)((Void *)ptr);
+		Byte* p2 = (Byte *)((Void *)ptr2);
+		int pix=0;
+		for (int y = 0; y < image->Height; y++) {
+			for (int x = 0; x < image->Width; x++) {
+				if ((x < spatial/2 ) && (y < spatial/2 )) {
+					for (int i = 0; i < spatial; ++i) {
+						for (int j = 0; j < spatial; ++j) {
+							pix += p[i*imagedata->Stride + j * 3];
+						}
+					}
+					
+				}
+				else if ((y < spatial/2) && (x > (image->Width - spatial))) {
+					for (int i = 0; i < spatial; i++) {
+						for (int j = (image->Width - spatial); j < image->Width; ++j) {
+							pix += p[i*imagedata->Stride + j * 3];
+						}
+					}
+				}
+				else if (y < spatial / 2) {
+					for (int i = 0; i < spatial; i++) {
+						for (int j = x - (spatial / 2); j < x + (spatial / 2) + 1; ++j) {
+							pix += p[i*imagedata->Stride + j * 3];
+						}
+					}
+				}
+				else if (y > image->Height - spatial) {
+					if (x < spatial / 2) {
+						for (int i = image->Width - spatial; i < image->Height; ++i) {
+							for (int j = 0; j < spatial; ++j) {
+								pix += p[i*imagedata->Stride + j * 3];
+							}
+						}
+					}
+					else if (x > image->Width - spatial) {
+						for (int i = image->Height - spatial; i < image->Height; ++i) {
+							for (int j = image->Width - spatial; j < image->Width; ++j) {
+								pix += p[i*imagedata->Stride + j * 3];
+							}
+						}
+					}
+					else {
+						for (int i = image->Height - spatial; i < image->Height; ++i) {
+							for (int j = x - (spatial / 2); j < x + (spatial / 2) + 1; ++j) {
+								pix += p[i*imagedata->Stride + j * 3];
+							}
+						}
+					}
+				}
+				else if (x < spatial / 2) {
+					for (int i = y - (spatial / 2); i < y + (spatial / 2) + 1; ++i) {
+						for (int j = 0; j < spatial; ++j) {
+							pix += p[i*imagedata->Stride + j * 3];
+						}
+					}
+				}
+				else if (x >(image->Width - spatial)) {
+					for (int i = y - (spatial / 2); i < y + (spatial / 2) + 1; ++i) {
+						for (int j = (image->Width - spatial); j < image->Width; ++j) {
+							pix += p[i*imagedata->Stride  + j * 3];
+						}
+					}
+				}
+				else {
+					for (int i = y - (spatial / 2); i < y + (spatial / 2) + 1; ++i) {
+						for (int j = x - (spatial / 2); j < x + (spatial / 2) + 1; ++j) {
+							pix += p[i*imagedata->Stride  + j * 3];
+						}
+					}
+				}
+				p2[0] = (pix / (spatial*spatial));
+				p2[1] = p2[0];
+				p2[2] = p2[0];
+				p2 += 3;
+				pix = 0;
+			}
+		}
+		image2->UnlockBits(imagedata2);
+		return image2;
+	}
+	private: System::Void button12_Click(System::Object^  sender, System::EventArgs^  e) {
+		pictureBox13->Image = medianfilter(ColorToGray(safe_cast<Bitmap^>(pictureBox12->Image)), 5);
+	}
+	private: System::Drawing::Bitmap^ medianfilter(Bitmap^ bmpSrc, int spatial) {
+		Bitmap^ image = ConvertBmpTo24Bit(gcnew Bitmap(bmpSrc));
+		Bitmap^ image2 = ConvertBmpTo24Bit(gcnew Bitmap(bmpSrc));
+		Rectangle rect = Rectangle(0, 0, image->Width, image->Height);
+		Rectangle rect2 = Rectangle(0, 0, image2->Width, image2->Height);
+		Imaging::BitmapData^ imagedata = image->LockBits(rect, System::Drawing::Imaging::ImageLockMode::ReadWrite, image->PixelFormat);
+		Imaging::BitmapData^ imagedata2 = image2->LockBits(rect2, System::Drawing::Imaging::ImageLockMode::ReadWrite, image2->PixelFormat);
+		IntPtr ptr = imagedata->Scan0;
+		IntPtr ptr2 = imagedata2->Scan0;
+		Byte* p = (Byte *)((Void *)ptr);
+		Byte* p2 = (Byte *)((Void *)ptr2);
+		int pix[25] = { 0 };
+		int coun = 0;
+		for (int y = 0; y < image->Height; y++) {
+			for (int x = 0; x < image->Width; x++) {
+				if ((x < spatial / 2) && (y < spatial / 2)) {
+					for (int i = 0; i < spatial; ++i) {
+						for (int j = 0; j < spatial; ++j) {
+							pix[coun++] = p[i*imagedata->Stride + j * 3];
+						}
+					}
+
+				}
+				else if ((y < spatial / 2) && (x >(image->Width - spatial))) {
+					for (int i = 0; i < spatial; i++) {
+						for (int j = (image->Width - spatial); j < image->Width; ++j) {
+							pix[coun++] = p[i*imagedata->Stride + j * 3];
+						}
+					}
+				}
+				else if (y < spatial / 2) {
+					for (int i = 0; i < spatial; i++) {
+						for (int j = x - (spatial / 2); j < x + (spatial / 2) + 1; ++j) {
+							pix[coun++] = p[i*imagedata->Stride + j * 3];
+						}
+					}
+				}
+				else if (y > image->Height - spatial) {
+					if (x < spatial / 2) {
+						for (int i = image->Width - spatial; i < image->Height; ++i) {
+							for (int j = 0; j < spatial; ++j) {
+								pix[coun++] = p[i*imagedata->Stride + j * 3];
+							}
+						}
+					}
+					else if (x > image->Width - spatial) {
+						for (int i = image->Height - spatial; i < image->Height; ++i) {
+							for (int j = image->Width - spatial; j < image->Width; ++j) {
+								pix[coun++] = p[i*imagedata->Stride + j * 3];
+							}
+						}
+					}
+					else {
+						for (int i = image->Height - spatial; i < image->Height; ++i) {
+							for (int j = x - (spatial / 2); j < x + (spatial / 2) + 1; ++j) {
+								pix[coun++] = p[i*imagedata->Stride + j * 3];
+							}
+						}
+					}
+				}
+				else if (x < spatial / 2) {
+					for (int i = y - (spatial / 2); i < y + (spatial / 2) + 1; ++i) {
+						for (int j = 0; j < spatial; ++j) {
+							pix[coun++] = p[i*imagedata->Stride + j * 3];
+						}
+					}
+				}
+				else if (x >(image->Width - spatial)) {
+					for (int i = y - (spatial / 2); i < y + (spatial / 2) + 1; ++i) {
+						for (int j = (image->Width - spatial); j < image->Width; ++j) {
+							pix[coun++] = p[i*imagedata->Stride + j * 3];
+						}
+					}
+				}
+				else {
+					for (int i = y - (spatial / 2); i < y + (spatial / 2) + 1; ++i) {
+						for (int j = x - (spatial / 2); j < x + (spatial / 2) + 1; ++j) {
+							pix[coun++] = p[i*imagedata->Stride + j * 3];
+						}
+					}
+				}
+				for (int i = 0; i < (spatial*spatial); ++i) {
+					for (int j = i+1; j < (spatial*spatial); ++j) {
+						if (pix[i] > pix[j]) {
+							int a=0;
+							a = pix[i];
+							pix[i] = pix[j];
+							pix[j] = a;
+						}
+					}
+				}
+				p2[0] = pix[((spatial*spatial)/2)];
+				p2[1] = p2[0];
+				p2[2] = p2[0];
+				p2 += 3;
+				coun = 0;
+				for (int i = 0; i < spatial*spatial; ++i) {
+					pix[i] = 0;
+				}
+			}
+		}
+		image2->UnlockBits(imagedata2);
+		return image2;
+	}
+	private: System::Void button13_Click(System::Object^  sender, System::EventArgs^  e) {
+		pictureBox13->Image = medpoint_filter(ColorToGray(safe_cast<Bitmap^>(pictureBox12->Image)), 5);
+	}
+	private: System::Drawing::Bitmap^ medpoint_filter(Bitmap^ bmpSrc, int spatial) {
+		Bitmap^ image = ConvertBmpTo24Bit(gcnew Bitmap(bmpSrc));
+		Bitmap^ image2 = ConvertBmpTo24Bit(gcnew Bitmap(bmpSrc));
+		Rectangle rect = Rectangle(0, 0, image->Width, image->Height);
+		Rectangle rect2 = Rectangle(0, 0, image2->Width, image2->Height);
+		Imaging::BitmapData^ imagedata = image->LockBits(rect, System::Drawing::Imaging::ImageLockMode::ReadWrite, image->PixelFormat);
+		Imaging::BitmapData^ imagedata2 = image2->LockBits(rect2, System::Drawing::Imaging::ImageLockMode::ReadWrite, image2->PixelFormat);
+		IntPtr ptr = imagedata->Scan0;
+		IntPtr ptr2 = imagedata2->Scan0;
+		Byte* p = (Byte *)((Void *)ptr);
+		Byte* p2 = (Byte *)((Void *)ptr2);
+		int pix[25] = { 0 };
+		int coun = 0;
+		for (int y = 0; y < image->Height; y++) {
+			for (int x = 0; x < image->Width; x++) {
+				if ((x < spatial / 2) && (y < spatial / 2)) {
+					for (int i = 0; i < spatial; ++i) {
+						for (int j = 0; j < spatial; ++j) {
+							pix[coun++] = p[i*imagedata->Stride + j * 3];
+						}
+					}
+
+				}
+				else if ((y < spatial / 2) && (x >(image->Width - spatial))) {
+					for (int i = 0; i < spatial; i++) {
+						for (int j = (image->Width - spatial); j < image->Width; ++j) {
+							pix[coun++] = p[i*imagedata->Stride + j * 3];
+						}
+					}
+				}
+				else if (y < spatial / 2) {
+					for (int i = 0; i < spatial; i++) {
+						for (int j = x - (spatial / 2); j < x + (spatial / 2) + 1; ++j) {
+							pix[coun++] = p[i*imagedata->Stride + j * 3];
+						}
+					}
+				}
+				else if (y > image->Height - spatial) {
+					if (x < spatial / 2) {
+						for (int i = image->Width - spatial; i < image->Height; ++i) {
+							for (int j = 0; j < spatial; ++j) {
+								pix[coun++] = p[i*imagedata->Stride + j * 3];
+							}
+						}
+					}
+					else if (x > image->Width - spatial) {
+						for (int i = image->Height - spatial; i < image->Height; ++i) {
+							for (int j = image->Width - spatial; j < image->Width; ++j) {
+								pix[coun++] = p[i*imagedata->Stride + j * 3];
+							}
+						}
+					}
+					else {
+						for (int i = image->Height - spatial; i < image->Height; ++i) {
+							for (int j = x - (spatial / 2); j < x + (spatial / 2) + 1; ++j) {
+								pix[coun++] = p[i*imagedata->Stride + j * 3];
+							}
+						}
+					}
+				}
+				else if (x < spatial / 2) {
+					for (int i = y - (spatial / 2); i < y + (spatial / 2) + 1; ++i) {
+						for (int j = 0; j < spatial; ++j) {
+							pix[coun++] = p[i*imagedata->Stride + j * 3];
+						}
+					}
+				}
+				else if (x >(image->Width - spatial)) {
+					for (int i = y - (spatial / 2); i < y + (spatial / 2) + 1; ++i) {
+						for (int j = (image->Width - spatial); j < image->Width; ++j) {
+							pix[coun++] = p[i*imagedata->Stride + j * 3];
+						}
+					}
+				}
+				else {
+					for (int i = y - (spatial / 2); i < y + (spatial / 2) + 1; ++i) {
+						for (int j = x - (spatial / 2); j < x + (spatial / 2) + 1; ++j) {
+							pix[coun++] = p[i*imagedata->Stride + j * 3];
+						}
+					}
+				}
+				for (int i = 0; i < (spatial*spatial); ++i) {
+					for (int j = i + 1; j < (spatial*spatial); ++j) {
+						if (pix[i] > pix[j]) {
+							int a = 0;
+							a = pix[i];
+							pix[i] = pix[j];
+							pix[j] = a;
+						}
+					}
+				}
+				p2[0] = (pix[0]+pix[(spatial*spatial)-1])/2;
+				p2[1] = p2[0];
+				p2[2] = p2[0];
+				p2 += 3;
+				coun = 0;
+				for (int i = 0; i < spatial*spatial; ++i) {
+					pix[i] = 0;
+				}
+			}
+		}
+		image2->UnlockBits(imagedata2);
+		return image2;
+	}
+	private: System::Void button14_Click(System::Object^  sender, System::EventArgs^  e) {
+		pictureBox13->Image = alpha_trimmed(ColorToGray(safe_cast<Bitmap^>(pictureBox12->Image)), 3, 1);
+	}
+	private: System::Drawing::Bitmap^ alpha_trimmed(Bitmap^ bmpSrc, int spatial,int t) {
+		Bitmap^ image = ConvertBmpTo24Bit(gcnew Bitmap(bmpSrc));
+		Bitmap^ image2 = ConvertBmpTo24Bit(gcnew Bitmap(bmpSrc));
+		Rectangle rect = Rectangle(0, 0, image->Width, image->Height);
+		Rectangle rect2 = Rectangle(0, 0, image2->Width, image2->Height);
+		Imaging::BitmapData^ imagedata = image->LockBits(rect, System::Drawing::Imaging::ImageLockMode::ReadWrite, image->PixelFormat);
+		Imaging::BitmapData^ imagedata2 = image2->LockBits(rect2, System::Drawing::Imaging::ImageLockMode::ReadWrite, image2->PixelFormat);
+		IntPtr ptr = imagedata->Scan0;
+		IntPtr ptr2 = imagedata2->Scan0;
+		Byte* p = (Byte *)((Void *)ptr);
+		Byte* p2 = (Byte *)((Void *)ptr2);
+		int pix[25] = { 0 };
+		int coun = 0;
+		int Pix = 0;
+		for (int y = 0; y < image->Height; y++) {
+			for (int x = 0; x < image->Width; x++) {
+				if ((x < spatial / 2) && (y < spatial / 2)) {
+					for (int i = 0; i < spatial; ++i) {
+						for (int j = 0; j < spatial; ++j) {
+							pix[coun++] = p[i*imagedata->Stride + j * 3];
+						}
+					}
+
+				}
+				else if ((y < spatial / 2) && (x >(image->Width - spatial))) {
+					for (int i = 0; i < spatial; i++) {
+						for (int j = (image->Width - spatial); j < image->Width; ++j) {
+							pix[coun++] = p[i*imagedata->Stride + j * 3];
+						}
+					}
+				}
+				else if (y < spatial / 2) {
+					for (int i = 0; i < spatial; i++) {
+						for (int j = x - (spatial / 2); j < x + (spatial / 2) + 1; ++j) {
+							pix[coun++] = p[i*imagedata->Stride + j * 3];
+						}
+					}
+				}
+				else if (y > image->Height - spatial) {
+					if (x < spatial / 2) {
+						for (int i = image->Width - spatial; i < image->Height; ++i) {
+							for (int j = 0; j < spatial; ++j) {
+								pix[coun++] = p[i*imagedata->Stride + j * 3];
+							}
+						}
+					}
+					else if (x > image->Width - spatial) {
+						for (int i = image->Height - spatial; i < image->Height; ++i) {
+							for (int j = image->Width - spatial; j < image->Width; ++j) {
+								pix[coun++] = p[i*imagedata->Stride + j * 3];
+							}
+						}
+					}
+					else {
+						for (int i = image->Height - spatial; i < image->Height; ++i) {
+							for (int j = x - (spatial / 2); j < x + (spatial / 2) + 1; ++j) {
+								pix[coun++] = p[i*imagedata->Stride + j * 3];
+							}
+						}
+					}
+				}
+				else if (x < spatial / 2) {
+					for (int i = y - (spatial / 2); i < y + (spatial / 2) + 1; ++i) {
+						for (int j = 0; j < spatial; ++j) {
+							pix[coun++] = p[i*imagedata->Stride + j * 3];
+						}
+					}
+				}
+				else if (x >(image->Width - spatial)) {
+					for (int i = y - (spatial / 2); i < y + (spatial / 2) + 1; ++i) {
+						for (int j = (image->Width - spatial); j < image->Width; ++j) {
+							pix[coun++] = p[i*imagedata->Stride + j * 3];
+						}
+					}
+				}
+				else {
+					for (int i = y - (spatial / 2); i < y + (spatial / 2) + 1; ++i) {
+						for (int j = x - (spatial / 2); j < x + (spatial / 2) + 1; ++j) {
+							pix[coun++] = p[i*imagedata->Stride + j * 3];
+						}
+					}
+				}
+				for (int i = 0; i < (spatial*spatial); ++i) {
+					for (int j = i + 1; j < (spatial*spatial); ++j) {
+						if (pix[i] > pix[j]) {
+							int a = 0;
+							a = pix[i];
+							pix[i] = pix[j];
+							pix[j] = a;
+						}
+					}
+				}
+				for (int i = t; i < (spatial*spatial) - t; ++i) {
+					Pix += pix[i];
+				}
+				p2[0] = Pix/((spatial*spatial)-(2*t));
+				p2[1] = p2[0];
+				p2[2] = p2[0];
+				p2 += 3;
+				coun = 0;
+				Pix = 0;
+				for (int i = 0; i < spatial*spatial; ++i) {
+					pix[i] = 0;
+				}
+			}
+		}
+		image2->UnlockBits(imagedata2);
+		return image2;
+	}
+#pragma endregion
+
+
+
+
+#pragma project6
+	private: System::Void pictureBox14_Click(System::Object^  sender, System::EventArgs^  e) {
+		OpenFileDialog^ openFileDialog = gcnew OpenFileDialog;
+		// 設定Filter，用以限定使用者開啟的檔案
+		openFileDialog->Filter = "點陣圖 (*.bmp)|*.bmp|All files (*.*)|*.*";
+		// 預設檔案名稱為空值
+		openFileDialog->FileName = "";
+		// 設定跳出選擇視窗的標題名稱
+		openFileDialog->Title = "載入影像";
+		// 設定Filter選擇模式(依照Filter數，如本例選擇1表示起始出現的為點陣圖，選擇2表示All filts)
+		openFileDialog->FilterIndex = 1;
+		// 跳出檔案選擇視窗(ShowDialog)，並且如果使用者點選檔案，並且檔案名稱超過0個字元，則判斷是為True，進入處理程序
+		if (openFileDialog->ShowDialog() == System::Windows::Forms::DialogResult::OK && openFileDialog->FileName->Length > 0) {
+			picture4filepath = openFileDialog->FileName;
+			Bitmap^ image1 = safe_cast<Bitmap^>(Image::FromFile(openFileDialog->FileName));
+			Rectangle rect1 = Rectangle(0, 0, image1->Width, image1->Height);
+			Imaging::BitmapData^ imagedata1 = image1->LockBits(rect1, System::Drawing::Imaging::ImageLockMode::ReadWrite, image1->PixelFormat);
+			IntPtr ptr = imagedata1->Scan0;
+			Byte* p = (Byte *)((Void *)ptr);
+			image1->UnlockBits(imagedata1);
+			pictureBox14->Image = image1;
+		}
+	}
+	private: System::Void button15_Click(System::Object^  sender, System::EventArgs^  e) {
+		pictureBox15->Image = spatial_high_pass(ColorToGray(safe_cast<Bitmap^>(pictureBox14->Image)), 3);
+	}
+	private: System::Void button16_Click(System::Object^  sender, System::EventArgs^  e) {
+		pictureBox15->Image = spatial_high_pass(ColorToGray(safe_cast<Bitmap^>(pictureBox14->Image)), 5);
+	}
+	private: System::Void button17_Click(System::Object^  sender, System::EventArgs^  e) {
+		pictureBox15->Image = spatial_high_pass(ColorToGray(safe_cast<Bitmap^>(pictureBox14->Image)), 7);
+	}
+	private: System::Drawing::Bitmap^ spatial_high_pass(Bitmap^ bmpSrc, int spatial) {
+		Bitmap^ image = ConvertBmpTo24Bit(gcnew Bitmap(bmpSrc));
+		Bitmap^ image2 = ConvertBmpTo24Bit(gcnew Bitmap(bmpSrc));
+		Rectangle rect = Rectangle(0, 0, image->Width, image->Height);
+		Rectangle rect2 = Rectangle(0, 0, image2->Width, image2->Height);
+		Imaging::BitmapData^ imagedata = image->LockBits(rect, System::Drawing::Imaging::ImageLockMode::ReadWrite, image->PixelFormat);
+		Imaging::BitmapData^ imagedata2 = image2->LockBits(rect2, System::Drawing::Imaging::ImageLockMode::ReadWrite, image2->PixelFormat);
+		IntPtr ptr = imagedata->Scan0;
+		IntPtr ptr2 = imagedata2->Scan0;
+		Byte* p = (Byte *)((Void *)ptr);
+		Byte* p2 = (Byte *)((Void *)ptr2);
+		int pix[49] = { 0 };
+		int coun = 0;
+		int Pix;
+		for (int y = 0; y < image->Height; y++) {
+			for (int x = 0; x < image->Width; x++) {
+				if ((x < spatial / 2) && (y < spatial / 2)) {
+					for (int i = 0; i < spatial; ++i) {
+						for (int j = 0; j < spatial; ++j) {
+							pix[coun++] = p[i*imagedata->Stride + j * 3];
+						}
+					}
+
+				}
+				else if ((y < spatial / 2) && (x >(image->Width - spatial))) {
+					for (int i = 0; i < spatial; i++) {
+						for (int j = (image->Width - spatial); j < image->Width; ++j) {
+							pix[coun++] = p[i*imagedata->Stride + j * 3];
+						}
+					}
+				}
+				else if (y < spatial / 2) {
+					for (int i = 0; i < spatial; i++) {
+						for (int j = x - (spatial / 2); j < x + (spatial / 2) + 1; ++j) {
+							pix[coun++] = p[i*imagedata->Stride + j * 3];
+						}
+					}
+				}
+				else if (y > image->Height - spatial) {
+					if (x < spatial / 2) {
+						for (int i = image->Width - spatial; i < image->Height; ++i) {
+							for (int j = 0; j < spatial; ++j) {
+								pix[coun++] = p[i*imagedata->Stride + j * 3];
+							}
+						}
+					}
+					else if (x > image->Width - spatial) {
+						for (int i = image->Height - spatial; i < image->Height; ++i) {
+							for (int j = image->Width - spatial; j < image->Width; ++j) {
+								pix[coun++] = p[i*imagedata->Stride + j * 3];
+							}
+						}
+					}
+					else {
+						for (int i = image->Height - spatial; i < image->Height; ++i) {
+							for (int j = x - (spatial / 2); j < x + (spatial / 2) + 1; ++j) {
+								pix[coun++] = p[i*imagedata->Stride + j * 3];
+							}
+						}
+					}
+				}
+				else if (x < spatial / 2) {
+					for (int i = y - (spatial / 2); i < y + (spatial / 2) + 1; ++i) {
+						for (int j = 0; j < spatial; ++j) {
+							pix[coun++] = p[i*imagedata->Stride + j * 3];
+						}
+					}
+				}
+				else if (x >(image->Width - spatial)) {
+					for (int i = y - (spatial / 2); i < y + (spatial / 2) + 1; ++i) {
+						for (int j = (image->Width - spatial); j < image->Width; ++j) {
+							pix[coun++] = p[i*imagedata->Stride + j * 3];
+						}
+					}
+				}
+				else {
+					for (int i = y - (spatial / 2); i < y + (spatial / 2) + 1; ++i) {
+						for (int j = x - (spatial / 2); j < x + (spatial / 2) + 1; ++j) {
+							pix[coun++] = p[i*imagedata->Stride + j * 3];
+						}
+					}
+				}
+				pix[(spatial*spatial) / 2] = pix[(spatial*spatial) / 2] * ((spatial*spatial)-1);
+				for (int i = 0; i < (spatial*spatial); ++i) {
+					if (i != (spatial*spatial)/2) {
+						pix[(spatial*spatial) / 2] -= pix[i];
+					}
+				}
+				pix[(spatial*spatial) / 2] = pix[(spatial*spatial) / 2] / (spatial*spatial);
+				if (pix[(spatial*spatial) / 2] < 0) {
+					Pix = 0;
+				}
+				else if (pix[(spatial*spatial) / 2] > 255) {
+					Pix = 255;
+				}
+				else {
+					Pix = pix[(spatial*spatial) / 2];
+				}
+				p2[0] = Pix;
+				p2[1] = p2[0];
+				p2[2] = p2[0];
+				p2 += 3;
+				coun = 0;
+				for (int i = 0; i < spatial*spatial; ++i) {
+					pix[i] = 0;
+				}
+			}
+		}
+		image2->UnlockBits(imagedata2);
+		return image2;
+	}
+	private: System::Void button18_Click(System::Object^  sender, System::EventArgs^  e) {
+		pictureBox15->Image = spatial_high_boost(ColorToGray(safe_cast<Bitmap^>(pictureBox14->Image)), 3, 1);
+	}
+	private: System::Void button19_Click(System::Object^  sender, System::EventArgs^  e) {
+		pictureBox15->Image = spatial_high_boost(ColorToGray(safe_cast<Bitmap^>(pictureBox14->Image)), 3, 2);
+	}
+	private: System::Void button20_Click(System::Object^  sender, System::EventArgs^  e) {
+		pictureBox15->Image = spatial_high_boost(ColorToGray(safe_cast<Bitmap^>(pictureBox14->Image)), 3, 3);
+	}
+	private: System::Drawing::Bitmap^ spatial_high_boost(Bitmap^ bmpSrc, int spatial,double A) {
+		Bitmap^ image = ConvertBmpTo24Bit(gcnew Bitmap(bmpSrc));
+		Bitmap^ image2 = ConvertBmpTo24Bit(gcnew Bitmap(bmpSrc));
+		Rectangle rect = Rectangle(0, 0, image->Width, image->Height);
+		Rectangle rect2 = Rectangle(0, 0, image2->Width, image2->Height);
+		Imaging::BitmapData^ imagedata = image->LockBits(rect, System::Drawing::Imaging::ImageLockMode::ReadWrite, image->PixelFormat);
+		Imaging::BitmapData^ imagedata2 = image2->LockBits(rect2, System::Drawing::Imaging::ImageLockMode::ReadWrite, image2->PixelFormat);
+		IntPtr ptr = imagedata->Scan0;
+		IntPtr ptr2 = imagedata2->Scan0;
+		Byte* p = (Byte *)((Void *)ptr);
+		Byte* p2 = (Byte *)((Void *)ptr2);
+		int pix[49] = { 0 };
+		int coun = 0;
+		int Pix;
+		for (int y = 0; y < image->Height; y++) {
+			for (int x = 0; x < image->Width; x++) {
+				if ((x < spatial / 2) && (y < spatial / 2)) {
+					for (int i = 0; i < spatial; ++i) {
+						for (int j = 0; j < spatial; ++j) {
+							pix[coun++] = p[i*imagedata->Stride + j * 3];
+						}
+					}
+
+				}
+				else if ((y < spatial / 2) && (x >(image->Width - spatial))) {
+					for (int i = 0; i < spatial; i++) {
+						for (int j = (image->Width - spatial); j < image->Width; ++j) {
+							pix[coun++] = p[i*imagedata->Stride + j * 3];
+						}
+					}
+				}
+				else if (y < spatial / 2) {
+					for (int i = 0; i < spatial; i++) {
+						for (int j = x - (spatial / 2); j < x + (spatial / 2) + 1; ++j) {
+							pix[coun++] = p[i*imagedata->Stride + j * 3];
+						}
+					}
+				}
+				else if (y > image->Height - spatial) {
+					if (x < spatial / 2) {
+						for (int i = image->Width - spatial; i < image->Height; ++i) {
+							for (int j = 0; j < spatial; ++j) {
+								pix[coun++] = p[i*imagedata->Stride + j * 3];
+							}
+						}
+					}
+					else if (x > image->Width - spatial) {
+						for (int i = image->Height - spatial; i < image->Height; ++i) {
+							for (int j = image->Width - spatial; j < image->Width; ++j) {
+								pix[coun++] = p[i*imagedata->Stride + j * 3];
+							}
+						}
+					}
+					else {
+						for (int i = image->Height - spatial; i < image->Height; ++i) {
+							for (int j = x - (spatial / 2); j < x + (spatial / 2) + 1; ++j) {
+								pix[coun++] = p[i*imagedata->Stride + j * 3];
+							}
+						}
+					}
+				}
+				else if (x < spatial / 2) {
+					for (int i = y - (spatial / 2); i < y + (spatial / 2) + 1; ++i) {
+						for (int j = 0; j < spatial; ++j) {
+							pix[coun++] = p[i*imagedata->Stride + j * 3];
+						}
+					}
+				}
+				else if (x >(image->Width - spatial)) {
+					for (int i = y - (spatial / 2); i < y + (spatial / 2) + 1; ++i) {
+						for (int j = (image->Width - spatial); j < image->Width; ++j) {
+							pix[coun++] = p[i*imagedata->Stride + j * 3];
+						}
+					}
+				}
+				else {
+					for (int i = y - (spatial / 2); i < y + (spatial / 2) + 1; ++i) {
+						for (int j = x - (spatial / 2); j < x + (spatial / 2) + 1; ++j) {
+							pix[coun++] = p[i*imagedata->Stride + j * 3];
+						}
+					}
+				}
+				pix[(spatial*spatial) / 2] = pix[(spatial*spatial) / 2] * (((spatial*spatial) - 2)+A);
+				for (int i = 0; i < (spatial*spatial); ++i) {
+					if (i != (spatial*spatial) / 2) {
+						pix[(spatial*spatial) / 2] -= pix[i];
+					}
+				}
+				if (pix[(spatial*spatial) / 2] < 0) {
+					Pix = 0;
+				}
+				else if (pix[(spatial*spatial) / 2] > 255) {
+					Pix = 255;
+				}
+				else {
+					Pix = pix[(spatial*spatial) / 2];
+				}
+				p2[0] = Pix;
+				p2[1] = p2[0];
+				p2[2] = p2[0];
+				p2 += 3;
+				coun = 0;
+				for (int i = 0; i < spatial*spatial; ++i) {
+					pix[i] = 0;
+				}
+			}
+		}
+		image2->UnlockBits(imagedata2);
+		return image2;
+	}
+#pragma endregion
+
 
 
 

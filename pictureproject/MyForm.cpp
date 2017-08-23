@@ -1,5 +1,7 @@
 #include <iostream>
 #include "MyForm.h"
+#include <math.h>
+#include <time.h>
 using namespace System;
 using namespace System::Windows::Forms;
 
